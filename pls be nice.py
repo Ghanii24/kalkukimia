@@ -31,7 +31,7 @@ def main():
             hitung_molaritas()
         elif pilihan == "2":
             hitung_fraksi_mol()
-        elif pilihan == "4":
+        elif pilihan == "3":
             hitung_persen_massa()
         elif pilihan == "4":
             print("Terima kasih! Program selesai.")
