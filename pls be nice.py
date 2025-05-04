@@ -4,12 +4,6 @@ def hitung_molaritas():
     molaritas = mol / volume
     print(f"Molaritas = {molaritas:.4f} M\n")
 
-def hitung_molalitas():
-    mol = float(input("Masukkan jumlah mol zat terlarut (mol): "))
-    massa_pelarut = float(input("Masukkan massa pelarut (kg): "))
-    molalitas = mol / massa_pelarut
-    print(f"Molalitas = {molalitas:.4f} m\n")
-
 def hitung_fraksi_mol():
     mol_terlarut = float(input("Masukkan jumlah mol zat terlarut: "))
     mol_pelarut = float(input("Masukkan jumlah mol pelarut: "))
@@ -27,22 +21,19 @@ def main():
     while True:
         print("\n=== Kalkulator Konsentrasi Kimia ===")
         print("1. Hitung Molaritas (M)")
-        print("2. Hitung Molalitas (m)")
-        print("3. Hitung Fraksi Mol")
-        print("4. Hitung Persentase Massa")
-        print("5. Keluar")
+        print("2. Hitung Fraksi Mol")
+        print("3. Hitung Persentase Massa")
+        print("4. Keluar")
 
-        pilihan = input("Pilih jenis perhitungan (1-5): ")
+        pilihan = input("Pilih jenis perhitungan (1-4): ")
 
         if pilihan == "1":
             hitung_molaritas()
         elif pilihan == "2":
-            hitung_molalitas()
-        elif pilihan == "3":
             hitung_fraksi_mol()
         elif pilihan == "4":
             hitung_persen_massa()
-        elif pilihan == "5":
+        elif pilihan == "4":
             print("Terima kasih! Program selesai.")
             break
         else:
